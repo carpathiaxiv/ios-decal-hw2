@@ -30,7 +30,7 @@ class IntermediateCalcUITests: SwiftCalcUITests {
         let app = XCUIApplication()
         UIHelper.pressButtons(app, names: ["2", "1", "*", "1", "1", "-"])
         UIHelper.validateStaticText(app, c: "231")
-        UIHelper.pressButtons(app, names: ["3", "1", "+", "0", "/"])
+        UIHelper.pressButtons(app, names: ["3", "1", "+", "0", "="])
         UIHelper.validateStaticText(app, c: "200")
     }
 
